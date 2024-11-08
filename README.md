@@ -143,3 +143,202 @@ Thuật toán Bubble Sort là thuật toán sắp xếp đơn giản nhất, ho�
 **Tham Khảo:**
 - Bubble Sort - GeeksforGeeks
   https://www.geeksforgeeks.org/bubble-sort/
+
+## 6. SHAKE/SHAKER SORT
+**Phân Loại:**
+- Offline sorting: cần toàn bộ dữ liệu để bắt đầu sắp xếp.
+
+**Ý Tưởng Sơ Bộ:**
+Thuật toán Shaker Sort là một biến thể của Bubble Sort, trong đó thay vì chỉ di chuyển các phần tử theo một chiều, nó di chuyển chúng theo cả hai chiều.
+
+**Thuật Toán:**
+1. Bước 1: Khởi tạo hai biến đánh dấu biên trái và biên phải của mảng.
+2. Bước 2: Di chuyển từ trái sang phải và đổi chỗ các phần tử nếu chúng không theo thứ tự.
+3. Bước 3: Giảm biên phải và di chuyển từ phải sang trái, đổi chỗ các phần tử nếu cần.
+4. Bước 4: Lặp lại cho đến khi biên trái và biên phải gặp nhau.
+
+**Độ Phức Tạp:**
+- Trường hợp tốt nhất: O(n) - Khi mảng đã sắp xếp.
+- Trường hợp trung bình: O(n²).
+- Trường hợp xấu nhất: O(n²).
+
+**Đặc Trưng:**
+Đặc điểm nổi bật Shaker Sort: Là một phiên bản cải tiến của Bubble Sort, giảm số lần duyệt không cần thiết.
+
+**Nhận Xét Khác:**
+- Ưu điểm: Giảm số lần duyệt không cần thiết so với Bubble Sort.
+- Nhược điểm: Vẫn không hiệu quả với mảng lớn.
+
+**Tham Khảo:**
+- Cocktail Sort - GeeksforGeeks
+  https://www.geeksforgeeks.org/cocktail-sort/
+
+## 7. COUNTING SORT
+**Phân Loại:**
+- Offline sorting: Cần toàn bộ dữ liệu để bắt đầu sắp xếp.
+
+**Ý Tưởng Sơ Bộ:**
+Thuật toán Counting Sort sắp xếp các phần tử bằng cách đếm số lần xuất hiện của mỗi giá trị riêng biệt.
+
+**Thuật Toán:**
+1. Bước 1: Tìm giá trị lớn nhất trong mảng để xác định phạm vi của mảng đếm.
+2. Bước 2: Khởi tạo mảng đếm với tất cả giá trị bằng 0.
+3. Bước 3: Đếm số lần xuất hiện của mỗi giá trị trong mảng và lưu vào mảng đếm.
+4. Bước 4: Tính toán vị trí chính xác của mỗi phần tử trong mảng đếm.
+5. Bước 5: Xây dựng mảng đã sắp xếp bằng cách duyệt ngược qua mảng ban đầu và sử dụng mảng đếm để xác định vị trí.
+
+**Độ Phức Tạp:**
+- Trường hợp tốt nhất: O(n+k) - với k là phạm vi giá trị của các phần tử.
+- Trường hợp trung bình: O(n+k).
+- Trường hợp xấu nhất: O(n+k).
+
+**Đặc Trưng:**
+Đặc điểm nổi bật Counting Sort: Không thực hiện so sánh phần tử, hiệu quả với mảng có phạm vi giá trị nhỏ.
+
+**Nhận Xét Khác:**
+- Ưu điểm: Hiệu quả cao với các mảng chứa các phần tử có phạm vi giá trị nhỏ.
+- Nhược điểm: Không hiệu quả với các mảng có phạm vi giá trị lớn.
+
+**Tham Khảo:**
+- Counting Sort - GeeksforGeeks
+  https://www.geeksforgeeks.org/counting-sort/
+
+## 8. QUICK SORT
+**Phân Loại:**
+- Offline sorting: Cần toàn bộ dữ liệu để bắt đầu sắp xếp.
+
+**Ý Tưởng Sơ Bộ:**
+Thuật toán Quick Sort là một thuật toán sắp xếp chia để trị, trong đó chọn một phần tử làm trục và phân chia mảng thành hai phần sao cho các phần tử nhỏ hơn trục ở bên trái và các phần tử lớn hơn trục ở bên phải.
+
+**Thuật Toán:**
+1. Bước 1: Chọn một phần tử làm trục.
+2. Bước 2: Phân chia mảng thành hai phần sao cho các phần tử nhỏ hơn trục ở bên trái và các phần tử lớn hơn trục ở bên phải.
+3. Bước 3: Đệ quy sắp xếp hai phần của mảng.
+
+**Độ Phức Tạp:**
+- Trường hợp tốt nhất: O(n log n) - khi trục chia mảng thành hai phần gần bằng nhau.
+- Trường hợp trung bình: O(n log n).
+- Trường hợp xấu nhất: O(n²) - khi trục là phần tử lớn nhất hoặc nhỏ nhất.
+
+**Đặc Trưng:**
+Đặc điểm nổi bật Quick Sort: có đặc điểm nổi bật là nhanh và hiệu quả trong thực tế.
+
+**Nhận Xét Khác:**
+- Ưu điểm: Rất nhanh cho các tập dữ liệu lớn, sử dụng bộ nhớ hiệu quả.
+- Nhược điểm: Hiệu quả phụ thuộc vào việc chọn trục, có thể không ổn định.
+
+**Tham Khảo:**
+- Quick Sort - GeeksforGeeks
+  https://www.geeksforgeeks.org/quick-sort/
+
+## 9. MERGE SORT
+**Phân Loại:**
+- Offline sorting: cần toàn bộ dữ liệu để bắt đầu sắp xếp.
+
+**Ý Tưởng Sơ Bộ:**
+Thuật toán Merge Sort là thuật toán sắp xếp dựa trên kỹ thuật chia để trị, trong đó mảng được chia thành hai nửa và mỗi nửa được sắp xếp đệ quy trước khi được hợp nhất.
+
+**Thuật Toán:**
+1. Bước 1: Chia mảng thành hai nửa.
+2. Bước 2: Đệ quy sắp xếp hai nửa.
+3. Bước 3: Hợp nhất hai nửa đã được sắp xếp thành một mảng đã sắp xếp.
+
+**Độ Phức Tạp:**
+- Trường hợp tốt nhất: O(n log n).
+- Trường hợp trung bình: O(n log n).
+- Trường hợp xấu nhất: O(n log n).
+
+**Đặc Trưng:**
+Điểm nổi bật của Merge Sort là tính ổn định và hiệu quả ngay cả trong trường hợp xấu nhất.
+
+**Nhận Xét Khác:**
+- Ưu điểm: Ổn định, hiệu quả tốt ngay cả trong trường hợp xấu nhất.
+- Nhược điểm: Cần thêm bộ nhớ cho mảng phụ.
+
+**Tham Khảo:**
+- Merge Sort - GeeksforGeeks
+  https://www.geeksforgeeks.org/merge-sort/
+
+## 10. HEAP SORT
+**Phân Loại:**
+- Offline sorting: Cần toàn bộ dữ liệu để bắt đầu sắp xếp.
+
+**Ý Tưởng Sơ Bộ:**
+Thuật toán Heap Sort là một thuật toán sắp xếp dựa trên cấu trúc dữ liệu heap (đống), trong đó mảng được coi như là một heap và các phần tử được sắp xếp bằng cách liên tục lấy phần tử lớn nhất từ heap.
+
+**Thuật Toán:**
+1. Bước 1: Xây dựng một heap từ mảng đầu vào.
+2. Bước 2: Liên tục trích xuất phần tử lớn nhất từ heap và đặt nó vào vị trí cuối cùng trong mảng đã sắp xếp.
+3. Bước 3: Giảm kích thước của heap và lặp lại cho đến khi toàn bộ mảng được sắp xếp.
+
+**Độ Phức Tạp:**
+- Trường hợp tốt nhất: O(n log n).
+- Trường hợp trung bình: O(n log n).
+- Trường hợp xấu nhất: O(n log n).
+
+**Đặc Trưng:**
+Điểm nổi bật của Heap Sort là khả năng sắp xếp trong thời gian O(n log n) ổn định.
+
+**Nhận Xét Khác:**
+- Ưu điểm: Hiệu quả, độ phức tạp O(n log n) ổn định.
+- Nhược điểm: Cần cấu trúc dữ liệu heap, có thể không ổn định.
+
+**Tham Khảo:**
+- Heap Sort - GeeksforGeeks
+  https://www.geeksforgeeks.org/heap-sort/
+
+## 11. SHELL SORT
+**Phân Loại:**
+- Offline sorting: Cần toàn bộ dữ liệu để bắt đầu sắp xếp.
+
+**Ý Tưởng Sơ Bộ:**
+Thuật toán Shell Sort là một cải tiến của thuật toán Insertion Sort, trong đó mảng được chia thành các khoảng cách nhỏ hơn và sắp xếp từng khoảng cách trước khi sắp xếp toàn bộ mảng.
+
+**Thuật Toán:**
+1. Bước 1: Chia mảng thành các khoảng cách nhỏ hơn.
+2. Bước 2: Sắp xếp từng khoảng cách bằng thuật toán Insertion Sort.
+3. Bước 3: Giảm kích thước của khoảng cách và lặp lại cho đến khi khoảng cách là 1.
+
+**Độ Phức Tạp:**
+- Trường hợp tốt nhất: O(n log n).
+- Trường hợp trung bình: Phụ thuộc vào lựa chọn khoảng cách.
+- Trường hợp xấu nhất: O(n log² n).
+
+**Đặc Trưng:**
+Shell Sort nổi bật với việc giảm dần khoảng cách và hiệu quả cao hơn Insertion Sort.
+
+**Nhận Xét Khác:**
+- Ưu điểm: Shell Sort cải tiến từ Insertion Sort, hiệu quả với mảng lớn.
+- Nhược điểm: Hiệu quả phụ thuộc vào lựa chọn khoảng cách.
+
+**Tham Khảo:**
+- Shell Sort - GeeksforGeeks
+  https://www.geeksforgeeks.org/shell-sort/
+
+## 12. RADIX SORT
+**Phân Loại:**
+- Offline sorting: cần toàn bộ dữ liệu để bắt đầu sắp xếp.
+
+**Ý Tưởng Sơ Bộ:**
+Thuật toán Radix Sort sắp xếp dãy bằng cách xử lý từng chữ số của các số nguyên.
+
+**Thuật Toán:**
+1. Bước 1: Bắt đầu từ chữ số ít quan trọng nhất.
+2. Bước 2: Sắp xếp các phần tử theo chữ số hiện tại sử dụng thuật toán sắp xếp ổn định như Counting Sort.
+3. Bước 3: Chuyển sang chữ số quan trọng tiếp theo và lặp lại cho đến khi toàn bộ dãy được sắp xếp.
+
+**Độ Phức Tạp:**
+- Trường hợp tốt nhất: O(nk) - với k là số chữ số của số lớn nhất.
+- Trường hợp trung bình: O(nk).
+- Trường hợp xấu nhất: O(nk).
+
+**Đặc Trưng:**
+Radix Sort nổi bật với khả năng sắp xếp hiệu quả khi các phần tử có cùng số lượng chữ số.
+
+**Nhận Xét Khác:**
+- Ưu điểm: Hiệu quả cao với các dãy có số lượng chữ số nhỏ.
+- Nhược điểm: Không hiệu quả với các dãy có phạm vi giá trị lớn.
+
+**Tham Khảo:**
+- Radix Sort - GeeksforGeeks
+  https://www.geeksforgeeks.org/radix-sort/
